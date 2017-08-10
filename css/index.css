@@ -1,0 +1,165 @@
+/*公共样式*/
+body{
+	font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+/*头部内容*/
+#header{
+	line-height: 40px;
+	border-bottom: 1px #ddd solid;
+}
+#header>.container>.row>div+div{
+	border-left:1px #ddd solid;
+}
+#header a{
+	font-size: 12px;
+	color: #888;
+	text-decoration: none;
+}
+#header>.navbar{
+	top: 0;
+}
+#header>.navbar-default{
+	width: 100%;
+	background-color: #fff;
+	border-color: #fff;
+}
+#header .navbar-brand>span{
+	font-size: 34px;
+}
+#header .navbar-brand>.icon-icon{
+	color:red;
+}
+#header .navbar-brand>.icon-logo{
+	color:#888;
+}
+#header .nav>li>a{
+	font-weight: bold;
+}
+#header .nav>li.active>a,
+#header .nav>li>a:hover{
+	background: #fff;
+	border-bottom:2px red solid;
+}
+/*广告轮播*/
+.carousel-indicators{
+	bottom:0px;
+}
+/*特色介绍*/
+#special{
+	margin:20px 0;
+}
+#special>.container>.row>div{
+	margin:10px 0;
+}
+#special .media>.media-left>a>span{
+	font-size: 34px;
+}
+/*立即预约*/
+#order .text-red{
+	color:red;
+}
+#order .left a{
+	border-bottom: 1px dashed red;
+	text-decoration: none;
+}
+#order .right a>span{
+	/*inherit,继承父类的属性*/
+	color: inherit;
+}
+/*产品推荐*/
+#product{
+	padding: 40px 0;
+	background-color: #eee;
+}
+#product .nav a{
+	color: #000;
+}
+#product .nav-tabs>li>a:focus,
+#product .nav-tabs>li>a:hover{
+	border-color:transparent;
+}
+#product .nav-tabs>li.active>a{
+	background-color: #eee;
+	border-color:transparent;
+	border-bottom: 5px solid red;
+}
+#product .tab-content{
+	margin: 20px 0;
+}
+#product .tab-content>.tab-pane>.row>div{
+	border: 10px solid #eee;
+	background-color: #fff;
+}
+#product .tab-content>.tab-pane>.row>div.active{
+	position: relative;
+	background-color: red;
+	color: #fff;
+}
+#product .tab-content>.tab-pane>.row>div.active:before{
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 0;
+	content: "\e915";
+	font-family: wjsfont;
+	font-size: 40px;
+	z-index: 10;
+}
+#product .tab-content>.tab-pane>.row>div>.row{
+	box-shadow: 1px 1px 1px 1px #ddd;
+}
+#product .tab-content>.tab-pane>.row>div>.row>div{
+	height: 160px;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.left{
+	position: relative;
+	border-right: 1px dashed #ddd;
+}
+#product .tab-content>.tab-pane>.row>div.active>.row>.left{
+	border-right-color: #fff;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.left:before{
+	display: block;
+	content: "";
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	width: 30px;
+	height: 30px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.left:after{
+	display: block;
+	content: "";
+	position: absolute;
+	right: -15px;
+	bottom: -15px;
+	width: 30px;
+	height: 30px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.right{
+	display: table;
+	text-align: center;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.right>.cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.right>.cell>h4{
+	margin: 0 auto;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.right>.cell>h4>.lead{
+	font-size: 30px;
+	font-weight: 700;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.right .tips>a.one{
+	border-color: red;
+	color: red;
+}
+#product .tab-content>.tab-pane>.row>div>.row>.right .tips>a.two{
+	border-color: #399;
+	color: #399;
+}
